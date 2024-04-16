@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div id="header"></div>
+
+        <h2>ABOUT US!</h2>
+
+        <details>
+            <summary>
+                <div class="box" onclick="openAboutPage()">
+                    <ion-icon name="bus" class="icon-left"></ion-icon>
+                    <span class="text">About Our App</span>
+                    
+                </div>
+            </summary>
+            <p class="text">
+                
+
+                    <p class="paragraph">
+                        The ring road bus fare calculator app is a mobile application designed to assist users in calculating and determining the fares for bus 
+                        trips in ring road of Kathmandu Valley consisting of the major routes and stops from Balkhu, Sanepa, Ekantakuna, Satdobato, Gwarko, Koteshor,
+                        Sinamangal, Gaushala, Chabahil, Chakrapath, Balaju, Banasthali, Swoyambhu, Kalanki and back to Balkhu.These are the major stops and there are
+                        other many stops and station within them which will be intregated into the system later on.</p>
+                            <p>  It provides a user-friendly interface where users can input their travel details,such as the starting and ending locations,
+                         to obtain the total distance and accurate fare information based on the selected route.This app retrieves fare information specific to
+                         the chosen route,taking into account factors like distance,fare types, and any applicable discounts.Users can also create personal
+                         profiles and save their favorite routes for quick access in the future.            
+                         
+                      </p>
+            
+            </p>
+        </details>
+
+        <br><br>
+
+        <details>
+            <summary>
+                <div class="box" onclick="howtopage()">
+                    <ion-icon name="help-circle" class="icon-left"></ion-icon>
+                    <span class="text">How To Use App?</span>
+                    
+                </div>
+            </summary>
+
+            <p class="text">
+                <h4>Follow The Following Steps!!</h4>
+                <h2>Steps:</h2>
+
+                <p class="steps">
+                    
+                        1:Enter your Origin and Destination . <br>
+                        2:Tap on Fare Calculate Button. <br>
+                        3:Login into app,if you are new to app then signup first. <br>
+                        4:View the total fare. <br>
+                        5:Proceed payment by cash or Scan QR code . <br>
+                      
+                </p>
+                
+            </p>
+        </details>
+    
+    <br><br>
+
+        <details>
+            <summary>
+                <div class="box">
+                    <ion-icon name="card" class="icon-left"></ion-icon>
+                    <span class="text">Payment Partners</span>
+                   
+                </div>
+            </summary>
+            <p class="text"></p>
+        </details>
+
+
+    
+
+        
+
+
+
+
+   
+    
+   <div id="navbar"></div>
+
+</div>
+
+<script>
+    $(function() {
+        $('#header').load('header.html');
+
+        $('#navbar').load('navbar.html');
+    });
+    </script>
+
+</body>
+</html>

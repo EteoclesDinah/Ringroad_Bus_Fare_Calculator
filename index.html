@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringroad Bus Fare Calculator</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <style>
+        #map { height: 500px; width: 500px;}
+     </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="preloader">
+        <h1>WELCOME TO RING ROAD BUS FARE CALCULATOR </h1>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle the loading progress (you can replace this with actual app loading logic)
+        const progressBar = document.querySelector('.progress');
+
+        function simulateLoading() {
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 1;
+                progressBar.style.width = `${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    // Remove the preloader when the app is ready
+                    document.querySelector('.preloader').style.display = 'none';
+                }
+            }, 25); // Adjust the interval as needed
+        }
+
+        window.addEventListener('load', simulateLoading);
+    </script>
+
+    </div>
+
+    <div class="container">
+        <div id="header"></div>
+
+        <div id="navbar"></div>
+    </div>
+
+    <script>
+        $(function() {
+
+            $('#header').load('header.html');
+
+            $('#navbar').load('navbar.html');
+        });
+    </script>
+
+</body>
+</html>
